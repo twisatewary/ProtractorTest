@@ -15,11 +15,11 @@ steps:
 - script: |
     npm install
     npm install -g grunt-cli
-    npm install grunt
+    npm install grunt-cli
   displayName: 'npm install and run grunt'
 
 - task: BatchScript@1
   inputs:
-    filename: run/runTestsOnLocal.bat
-    command: run/runTestsOnLocal.bat
-    customCommand: 'run/runTestsOnLocal.bat'
+    filename: ProtractorTest/run/runTestsOnLocal.bat
+    command: ProtractorTest/run/runTestsOnLocal.bat
+    customCommand: 'ProtractorTest/run/runTestsOnLocal.bat'
