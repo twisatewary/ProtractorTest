@@ -14,7 +14,8 @@ steps:
 
 - script: |
     npm install
-    grunt --gruntfile Gruntfile.js
+    npm install -g grunt-cli
+    npm install grunt
   displayName: 'npm install and run grunt'
 
 - task: BatchScript@1
