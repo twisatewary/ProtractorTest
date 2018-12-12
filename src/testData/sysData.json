@@ -1,0 +1,15 @@
+[
+  {
+    "shortWait": 1000,
+    "mediumWait": 5000,
+    "longWait": 10000,
+    "veryLongWait": 20000
+  },
+  {
+    "postbugtojira": "false",
+    "postTestResultToZephyr": "false",
+    "jiraUrl":"http://192.168.1.45:8080",
+    "basicAuthorization":"Basic a2FydW5ha2FyLnRhbGxhZGE6WmVucUAxMjM=",
+    "bugKey":"ZENQ"
+  }
+]

@@ -1,0 +1,20 @@
+[2018-12-12 14:31:43.983] [INFO] log - 
+<==== Started Test Case [undefined:Should navigate to JetBlue page and verify] on Machine [SYS119] ====>
+[2018-12-12 14:32:02.035] [INFO] log - 
+<==== Completed Test Case - [windows:Should navigate to JetBlue page and verify] [Test Result: passed] ====>
+[2018-12-12 14:32:02.040] [INFO] log - 
+<==== Started Test Case [windows:Should login into JetBlue] on Machine [SYS119] ====>
+[2018-12-12 14:32:07.415] [INFO] log -  Home page 'Sign In' button - is attached to the page document
+[2018-12-12 14:32:12.975] [INFO] log - Clicked on -  Home page 'Sign In' button
+[2018-12-12 14:32:16.002] [INFO] log - Cleared content under -- User email input field 
+[2018-12-12 14:32:16.153] [INFO] log - Entered [sitetest150@gmail.com] under -- User email input field 
+[2018-12-12 14:32:16.375] [INFO] log - Cleared content under -- Password input field 
+[2018-12-12 14:32:16.446] [INFO] log - Entered [zenq12345] under -- Password input field 
+[2018-12-12 14:32:16.541] [INFO] log -  Sign In  - is attached to the page document
+[2018-12-12 14:32:16.873] [INFO] log - Clicked on -  Sign In 
+[2018-12-12 14:32:16.874] [INFO] log - 
+<==== Completed Test Case - [windows:Should login into JetBlue] [Test Result: passed] ====>
+[2018-12-12 14:32:16.891] [INFO] log - 
+<==== Started Test Case [windows:Should verify login] on Machine [SYS119] ====>
+[2018-12-12 14:32:25.628] [INFO] log - 
+<==== Completed Test Case - [windows:Should verify login] [Test Result: passed] ====>

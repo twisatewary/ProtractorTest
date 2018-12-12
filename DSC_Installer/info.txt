@@ -1,0 +1,1 @@
+Make sure the folder name where the framework is saved should not have any spaces in it to avoid issues while installing NodeJs

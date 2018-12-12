@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protractor Test Report</title>
+  <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
+  <script type="text/javascript">
+    google.load('visualization', '1', {packages:['corechart']}); 
+    google.setOnLoadCallback(drawSummaryChart);
+    function drawSummaryChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Result', 'Number of Tests'],
+        ['Success', 4],
+        ['Failure', 0],
+        ['Skipped', 0],
+      ]);
+      var options = {
+        'chartArea': {'width': '90%', 'height': '90%'},
+        'legend': 'none',
+        colors: ['#4ca64c', '#FE2E2E', '#ffff00']
+      };
+      var chart = new google.visualization.PieChart(document.getElementById('summaryPieChart'));
+      chart.draw(data, options);
+    }
+    
+  </script>
+</html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>ul,li{margin-left:0;padding-left:0;width:100%;font-weight:bold;}table{width:95%;text-align:left;border-spacing:0;border-collapse: separate;margin-bottom:5px;}li{font-weight:bold;padding-left:5px;list-style:none;}ul table li{font-weight: normal}th,td{padding: 10px;border: 1px solid #000;}td.desc-col{width:390px;margin-left:20px;}th.desc-col{width: 390px;}td.status-col{width:75px;}th.status-col{width: 75px;}td.browser-col{width:150px;}th.browser-col{width: 150px;}td.os-col{width:90px;}th.os-col{width: 90px;}td.msg-col{width:300px;}th.msg-col{width: 300px;}table.header{background-color: gray; color: #fff;margin-left:20px;}.traceinfo{position: fixed;top: 0; bottom: 0;left: 0;right:0;background: rgba(0,0,0,0.8);z-index: 99999;opacity:0;-webkit-transition: opacity 400ms ease-in;transition: opacity 400ms ease-in;pointer-events: none;}.traceinfo.visible{opacity:1;pointer-events: auto;}.traceinfo > div{width: 400px;position: relative;margin: 10% auto;padding: 5px 20px 13px 20px;background: #fff;}.traceinfo .close{background: #606061;color: #FFFFFF;line-height: 25px;position: absolute;right: -12px;text-align: center;top: -10px;width: 24px;text-decoration: none;font-weight: bold;}.traceinfo .close:hover{background: #00d9ff;}body{width:100%;style='font-family:Arial;'} </style>
+</head>
+<body>
+  <div style="margin-left:20px;">
+    <h1>Protractor Test Results</h1>
+    <div style="margin-left:20px; margin-right:40px;" class="logo"><a href="http://www.zenq.com " target="_blank"><img src="http://zenq.com/Portals/0/logo.png" align="right" width="10%" height="10%"></a></div>
+  </div>
+  <div id="summaryPieChart" style="width: 420px; height: 170px;"></div>
+  <div style="background-color:gray; color:white; margin-left:20px; margin-right:40px; padding:4px;">
+    <div style="text-align: right; align:right" class="viewlog"> <a type="button" href="../../../logs/logFile.log" target="_blank">View LogOutput</a></div>
+    <h2> 
+      <u>Result Summary </u>
+    </h2><b>
+      Total Test Cases 
+      : </b><b>4 <br></b><b>
+      Total Tests Passed 
+      : </b><b>4 <br></b><b>
+      Total Tests Failed 
+      : </b><b>0 <br></b><b>
+      Total Tests Skipped 
+      : </b><b>0 <br></b><b>
+      Total Time Taken 
+      : </b><b>0 hours, 0 minutes and 52 second(s) <br></b><b>
+      This report is generated on 
+      : </b><b>2018-11-5 14:44:19 </b>
+  </div><br><br>
+  <table class="header">
+    <tr>
+      <th style="width:30%;text-align:center" class="desc-col">Description</th>
+      <th style="width:10%;text-align:center" class="status-col">Status</th>
+      <th style="width:10%;text-align:center" class="browser-col">Browser</th>
+      <th style="width:10%;text-align:center" class="os-col">OS</th>
+      <th style="width:30%;text-align:center" class="msg-col">Message</th>
+      <th style="width:10%;text-align:center" class="img-col">Screenshot</th>
+    </tr>
+  </table>
+  <li style="margin-left:20px;">
+    <h3 class="span"> Should test Jet blue login page functionality </h3>
+  </li>
+  <table style="margin-left:20px;table-layout: fixed">
+    <tr class="status">
+      <td style="width:30%;table-layout:fixed;" class="desc-col"><span>Should navigate to JetBlue page and verify</span>
+        <td style="color:#fff;background-color: green;width:10%; text-align:center" class="status-col">Pass</td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="browser-col"> <span>CHROME v 70</span></td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="os-col"><span>WINDOWS NT</span></td>
+        <td style="width:30%;overflow-y: hidden;text-align:center" class="msg-col">Passed 
+          <td style="width:10%;text-align:center" class="img-col">-- </td>
+        </td>
+      </td>
+    </tr>
+    <tr class="status">
+      <td style="width:30%;table-layout:fixed;" class="desc-col"><span>Should login into JetBlue</span>
+        <td style="color:#fff;background-color: green;width:10%; text-align:center" class="status-col">Pass</td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="browser-col"> <span>CHROME v 70</span></td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="os-col"><span>WINDOWS NT</span></td>
+        <td style="width:30%;overflow-y: hidden;text-align:center" class="msg-col">Passed 
+          <td style="width:10%;text-align:center" class="img-col">-- </td>
+        </td>
+      </td>
+    </tr>
+    <tr class="status">
+      <td style="width:30%;table-layout:fixed;" class="desc-col"><span>Should verify login</span>
+        <td style="color:#fff;background-color: green;width:10%; text-align:center" class="status-col">Pass</td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="browser-col"> <span>CHROME v 70</span></td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="os-col"><span>WINDOWS NT</span></td>
+        <td style="width:30%;overflow-y: hidden;text-align:center" class="msg-col">Passed 
+          <td style="width:10%;text-align:center" class="img-col">-- </td>
+        </td>
+      </td>
+    </tr>
+    <tr class="status">
+      <td style="width:30%;table-layout:fixed;" class="desc-col"><span>Should select city</span>
+        <td style="color:#fff;background-color: green;width:10%; text-align:center" class="status-col">Pass</td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="browser-col"> <span>CHROME v 70</span></td>
+        <td style="width:10%;overflow-y: hidden;text-align:center" class="os-col"><span>WINDOWS NT</span></td>
+        <td style="width:30%;overflow-y: hidden;text-align:center" class="msg-col">Passed 
+          <td style="width:10%;text-align:center" class="img-col">-- </td>
+        </td>
+      </td>
+    </tr>
+  </table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
