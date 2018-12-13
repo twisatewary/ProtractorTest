@@ -17,6 +17,9 @@ steps:
     npm install -g protractor
     npm install protractor
     npm install protractor --save-dev
+    webdriver-manager update
+    webdriver-manager start
+ 
     
   displayName: 'npm install and run grunt'
 
