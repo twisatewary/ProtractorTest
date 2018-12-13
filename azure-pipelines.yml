@@ -16,8 +16,7 @@ steps:
     npm install
     npm install -g grunt-cli
     npm install grunt-cli
-    webdriver-manager update
-    webdriver-manager start
+    npm install grunt --save-dev
   displayName: 'npm install and run grunt'
 
 - task: BatchScript@1
