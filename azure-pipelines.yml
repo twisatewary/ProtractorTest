@@ -17,9 +17,6 @@ steps:
     npm install -g grunt-cli
     npm install grunt-cli
     npm install grunt --save-dev
+    grunt
   displayName: 'npm install and run grunt'
 
-- task: BatchScript@1
-  inputs:
-    filename: runTestsOnLocal.bat
-   
