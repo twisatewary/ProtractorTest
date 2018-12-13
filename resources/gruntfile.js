@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-run-executables');
 
-    grunt.task.registerTask('local',['clean','mkdir','protractor:e2e_tests']);
+    grunt.task.registerTask('default',['clean','mkdir','protractor:e2e_tests']);
     //grunt.task.registerTask('local',['clean','mkdir','run_executables:run']);
     grunt.registerTask('report','run_executables:report');
 };
