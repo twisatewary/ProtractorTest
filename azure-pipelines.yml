@@ -14,16 +14,16 @@ steps:
 
 - script: |
     npm install
-    npm install -g grunt-cli
-    npm install grunt-cli
-    npm install grunt --save-dev
+    npm install -g protractor
+    npm install protractor
+    npm install protractor --save-dev
     
   displayName: 'npm install and run grunt'
 
 -  task: CmdLine@2
    inputs:
     script: |
-     cd resources
-     grunt
+     cd configurations
+     protractor config.js
    
 
