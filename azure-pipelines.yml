@@ -21,5 +21,5 @@ steps:
 
 - task: BatchScript@1
   inputs:
-    filename: ./runTestsOnLocal.bat
+    filename: C:\Users\twisa.tewary\Desktop\gitframework\ProtractorTest\runTestsOnLocal.bat
    
