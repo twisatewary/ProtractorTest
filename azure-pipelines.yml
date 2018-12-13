@@ -17,17 +17,16 @@ steps:
     npm install -g grunt-cli
     npm install grunt-cli
     npm install grunt --save-dev
-    
+    npm install -g webdriver-manager
+    webdriver-manager update
+    webdriver-manager start
     
       
   displayName: 'npm install and run grunt'
 
 -  task: CmdLine@2
    inputs:
-    script: |
-      npm install -g webdriver-manager
-      webdriver-manager update
-      webdriver-manager start
+    script: |      
       cd resources
       grunt
    
