@@ -17,14 +17,14 @@ steps:
     npm install -g grunt-cli
     npm install grunt-cli
     npm install grunt --save-dev
+    node_modules/protractor/bin/webdriver-manager update
+    node_modules/protractor/bin/webdriver-manager start
       
   displayName: 'npm install and run grunt'
 
 -  task: CmdLine@2
    inputs:
     script: |
-     webdriver-manager update
-     webdriver-manager start
       cd resources
       grunt
    
