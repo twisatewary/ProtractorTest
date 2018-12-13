@@ -1,0 +1,25 @@
+# Node.js with Grunt
+# Build a Node.js project using the Grunt task runner.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+pool:
+  vmImage: 'vs2017-win2016'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '8.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm install -g grunt-cli
+    npm install grunt-cli
+  displayName: 'npm install and run grunt'
+
+- task: BatchScript@1
+  inputs:
+    filename: C:/Users/twisa.tewary/Desktop/gitframework/ProtractorTest/run/runTestsOnLocal.bat
+    command: C:/Users/twisa.tewary/Desktop/gitframework/ProtractorTest/run/runTestsOnLocal.bat
+    customCommand: '/run/runTestsOnLocal.bat'
