@@ -14,9 +14,9 @@ steps:
 
 - script: |
     npm install
-    npm install -g protractor
-    npm install protractor
-    npm install protractor --save-dev
+    npm install -g grunt-cli
+    npm install grunt-cli
+    npm install grunt --save-dev
     webdriver-manager update
     webdriver-manager start
  
@@ -26,7 +26,7 @@ steps:
 -  task: CmdLine@2
    inputs:
     script: |
-     cd configurations
-     protractor config.js
+      cd resources
+      grunt
    
 
