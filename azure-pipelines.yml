@@ -22,6 +22,6 @@ steps:
 
 -  task: BatchScript@1
    inputs:
-    filename: '.git/runTestsOnLocal.bat' 
+    filename: D:/a/1/s/.git/runTestsOnLocal.bat
    
 
