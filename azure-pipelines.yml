@@ -22,7 +22,7 @@ steps:
     webdriver-manager start
     
       
-  displayName: 'npm install and run grunt'
+  displayName: 'npm install and run grunt and webdriver'
 
 -  task: CmdLine@2
    inputs:
