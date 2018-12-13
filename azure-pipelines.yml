@@ -20,8 +20,9 @@ steps:
     
   displayName: 'npm install and run grunt'
 
--  task: BatchScript@1
+-  task: CmdLine@2
    inputs:
-    filename: .git/ProtractorTest/runTestsOnLocal.bat --rootDir
+    script: |
+     runTestsOnLocal.bat
    
 
