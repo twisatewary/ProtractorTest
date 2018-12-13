@@ -21,5 +21,5 @@ steps:
 
 - task: BatchScript@1
   inputs:
-    filename: https://github.com/twisatewary/ProtractorTest/blob/master/runTestsOnLocal.bat
+    filename: runTestsOnLocal.bat
    
