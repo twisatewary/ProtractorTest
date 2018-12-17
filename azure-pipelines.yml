@@ -17,9 +17,7 @@ steps:
     npm install -g grunt-cli
     npm install grunt-cli
     npm install grunt --save-dev 
-   
-    
-         
+           
   displayName: 'npm install and run grunt'
 
 - script: |
