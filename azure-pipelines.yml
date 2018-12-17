@@ -22,6 +22,11 @@ steps:
          
   displayName: 'npm install and run grunt'
 
+- script: |
+    npm install webdriver-manager -g
+    webdriver-manager update
+    webdriver-manager start
+   
 
 
 
