@@ -24,6 +24,8 @@ steps:
     npm install webdriver-manager -g
     webdriver-manager update
     webdriver-manager clean
+    chromeOnly: true,
+    directConnect: true,
     webdriver-manager status
     webdriver-manager start
    
