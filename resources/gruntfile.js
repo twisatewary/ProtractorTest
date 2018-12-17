@@ -23,6 +23,10 @@ module.exports = function(grunt) {
             }
         },
 
+        selenium_start: {
+        options: { port: 4444 }
+    },
+        
         //To execute batch files as grunt tasks
         run_executables: {
             run: {
@@ -47,6 +51,7 @@ module.exports = function(grunt) {
                         seleniumPort:4444
                     }
                 }
+               
             }
         }
     });
@@ -60,7 +65,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-run-executables');
     grunt.loadNpmTasks('grunt-selenium-webdriver');
-
+     grunt.registerTask('selenium_start','selenium_start:options');
     grunt.task.registerTask('default',['clean','mkdir','protractor:e2e_tests']);
     //grunt.task.registerTask('local',['clean','mkdir','run_executables:run']);
     grunt.registerTask('report','run_executables:report');
