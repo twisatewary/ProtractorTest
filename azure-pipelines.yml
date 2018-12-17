@@ -27,7 +27,7 @@ steps:
     chromeOnly: true,
     directConnect: true,
     webdriver-manager status
-    webdriver-manager start
+    webdriver-manager start 
    
 
 
