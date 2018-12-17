@@ -16,13 +16,13 @@ steps:
     node --version
     npm install
    
-    npm install -g grunt-cli
-    npm install grunt-cli
-    npm install grunt --save-dev 
-           
-  displayName: 'npm install and run grunt'
 
-
+- task: CmdLine@2
+  inputs:
+    script: |         
+      cd DSC_Installer
+      RunMeAsAdmin.cmd
+      cd..
 
 -  task: CmdLine@2
    inputs:
