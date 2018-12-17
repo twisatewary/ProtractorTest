@@ -23,7 +23,9 @@ steps:
 - script: |
     npm install webdriver-manager -g
     webdriver-manager update
-    node webdriver-manager start
+    webdriver-manager clean
+    webdriver-manager status
+    webdriver-manager start
    
 
 
