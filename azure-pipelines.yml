@@ -16,6 +16,7 @@ steps:
     node --version
     npm install
     grunt --gruntfile Gruntfile.js
+    npm install and run grunt
 # npm install -g grunt-cli
 #    npm install grunt-cli
 #   npm install grunt --save-dev 
