@@ -5,7 +5,7 @@ cd resources
 
 ::call grunt updateTestData
 
-call grunt local
+call grunt default
 call grunt report
 
 ::cd..
