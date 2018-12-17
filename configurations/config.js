@@ -14,10 +14,9 @@ exports.config = {
     },
 
     specs: ['./../src/testSuites/*.js'],
-    directConnect: true,
-    multiCapabilities:[
+     multiCapabilities:[
         {
-            //seleniumAddress: 'http://localhost:4444/wd/hub',
+            seleniumAddress: 'http://localhost:4444/wd/hub',
             'browserName':'chrome',
             'name':'windows',
             'chromeOptions':{
