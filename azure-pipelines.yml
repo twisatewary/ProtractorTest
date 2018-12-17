@@ -19,10 +19,10 @@ steps:
     npm install grunt --save-dev 
     
          
-  displayName: 'npm install and run grunt and webdriver'
+  displayName: 'npm install and run grunt'
 
 - script: |    
-    npm install webdriver-manager -g
+    npm install webdriver-manager --save-dev
      webdriver-manager update
      webdriver-manager start
 
