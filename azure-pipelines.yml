@@ -15,23 +15,12 @@ steps:
 - script: |
     node --version
     npm install
-    grunt --gruntfile Gruntfile.js
-    npm install and run grunt
-# npm install -g grunt-cli
-#    npm install grunt-cli
-#   npm install grunt --save-dev 
+   
+    npm install -g grunt-cli
+    npm install grunt-cli
+    npm install grunt --save-dev 
            
   displayName: 'npm install and run grunt'
-
-- script: |
-    npm install webdriver-manager -g
-    webdriver-manager update
-    webdriver-manager clean
-    chromeOnly: true,
-    directConnect: true,
-    webdriver-manager status
-    webdriver-manager start 
-   
 
 
 
