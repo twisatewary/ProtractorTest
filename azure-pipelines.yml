@@ -1,3 +1,4 @@
+
 # Node.js with Grunt
 # Build a Node.js project using the Grunt task runner.
 # Add steps that analyze code, save build artifacts, deploy, and more:
@@ -23,6 +24,7 @@ steps:
    
 
 - script: |
+    npm install protractor -g
     webdriver-manager update
     webdriver-manager start
   displayName: 'Webdriver install'
