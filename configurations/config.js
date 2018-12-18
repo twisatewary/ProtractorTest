@@ -18,7 +18,7 @@ exports.config = {
      multiCapabilities:[
         {
             //seleniumAddress: 'http://localhost:4444/wd/hub',
-            seleniumAddress: 'http://192.168.3.31:4444/wd/hub', 
+            seleniumAddress: 'http://192.168.2.94:4444/wd/hub', 
             'browserName':'chrome',
             'name':'windows',
             'chromeOptions':{
