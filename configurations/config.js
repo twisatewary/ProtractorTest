@@ -12,11 +12,12 @@ exports.config = {
         // Default time to wait in ms before a test fails.
         defaultTimeoutInterval: 600000
     },
-    directConnect: true,
+    //directConnect: true,
+    directConnect: false,
     specs: ['./../src/testSuites/*.js'],
      multiCapabilities:[
         {
-            //seleniumAddress: 'http://localhost:4444/wd/hub',
+            seleniumAddress: 'http://localhost:4444/wd/hub',
             'browserName':'chrome',
             'name':'windows',
             'chromeOptions':{
