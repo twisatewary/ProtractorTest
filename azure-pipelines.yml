@@ -23,12 +23,7 @@ steps:
   displayName: 'npm install and run grunt'
    
 
-- script: |
-    npm install webdriver-manager -g
-    npm install protractor -g
-    webdriver-manager update
-    webdriver-manager start
-  displayName: 'Webdriver install'
+
 
 
 -  task: CmdLine@2
