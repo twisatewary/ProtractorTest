@@ -12,17 +12,21 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
+
 - script: |
     node --version
     npm install
+    npm install -g grunt-cli
+    npm install grunt-cli
+    npm install grunt --save-dev
+  displayName: 'npm install and run grunt'
    
 
-- task: CmdLine@2
-  inputs:
-    script: |         
-      cd DSC_Installer
-      RunMeAsAdmin.cmd
-      cd..
+- script: |
+    webdriver-manager update
+    webdriver-manager start
+  displayName: 'Webdriver install'
+
 
 -  task: CmdLine@2
    inputs:
