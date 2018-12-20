@@ -25,7 +25,6 @@ steps:
     npm install webdriver-manager -g
     npm install protractor -g
     webdriver-manager update
-    webdriver-manager start
   displayName: 'Webdriver install'
 
 
