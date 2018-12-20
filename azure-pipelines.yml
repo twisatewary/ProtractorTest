@@ -4,8 +4,6 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
-pool:
-  vmImage: 'vs2017-win2016'
 
 steps:
 - task: NodeTool@0
@@ -29,7 +27,6 @@ steps:
     webdriver-manager update
     webdriver-manager start
   displayName: 'Webdriver install'
-
 
 
 -  task: CmdLine@2
